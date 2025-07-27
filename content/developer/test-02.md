@@ -1,37 +1,13 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
+---
+title: "Ruby-001"
+tag: "ruby"
+date: "2022-09-02"
+description: "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system."
+---
 
-export const meta = {
-  author: 'Adam Wathan',
-  date: '2022-09-02',
-  title: 'Introducing Animaginary: High performance web animations',
-  description:
-    'When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.',
-}
+Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
 
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-When you’re building a website for a company as ambitious as Planetaria, you need to make an impression. I wanted people to visit our website and see animations that looked more realistic than reality itself.
-
-To make this possible, we needed to squeeze every drop of performance out of the browser possible. And so Animaginary was born.
-
-```js
-import { animate } from '@planetaria/animaginary'
-
-export function MyComponent({ open, children }) {
-  return (
-    <animate.div
-      in={open}
-      animateFrom="opacity-0 scale-95"
-      animateTo="opacity-100 scale-100"
-      duration={350}
-    >
-      {children}
-    </animate.div>
-  )
-}
-```
-
-Animaginary is our new web animation library that redefines what you thought was possible on the web. Hand-written in optimized WASM, Animaginary can even animate the `height` property of an element at 60fps.
+I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
 
 ## Sermone fata
 

@@ -1,20 +1,10 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
-import Image from 'next/image'
-import designSystem from './planetaria-design-system.png'
-
-export const meta = {
-  author: 'Adam Wathan',
-  date: '2022-09-05',
-  title: 'Crafting a design system for a multiplanetary future',
-  description:
-    'Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.',
-}
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
+---
+title: "Crafting a design system for a multiplanetary future"
+date: "2022-09-02"
+description: "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system."
+---
 
 Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
-
-<Image src={designSystem} alt="" />
 
 I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
 
