@@ -12,7 +12,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
   */
-  basePath: "/nextjs-github-pages",
+  basePath: "/revist",
 
   /**
    * Disable server-based image optimization. Next.js does not support
@@ -23,7 +23,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-    pageExtensions: ['js', 'jsx'],
+  pageExtensions: ['js', 'jsx'],
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
