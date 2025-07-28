@@ -10,9 +10,8 @@ function getWork() {
       'Experienced software developer with 25+ years building scalable, high-performance' +
         ' applications across diverse technology stacks. Proven expertise in distributed systems,' +
         ' real-time data processing, and full-stack development.',
-      ' Strong track record of architecting solutions that handle massive scale (90M+ metrics per' +
-        ' 5 minutes) while maintaining reliability and performance. Combines deep technical' +
-        ' knowledge with leadership experience to deliver robust software solutions.',
+      ' Strong track record of architecting solutions that handle massive scale (90M+ metrics every 5 minutes) while maintaining reliability and performance.',
+      ' Combines deep technical knowledge with leadership experience to deliver robust software solutions.',
     ]
   }
 }
