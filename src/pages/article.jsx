@@ -2,15 +2,17 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { ChevronRightIcon } from '@/components/Icons'
 
 import { formatDate } from '@/lib/formatDate'
 import { getContents } from '@/lib/getContent'
 
 function Content({ content }) {
   return (
-    <article className="md:grid md:grid-cols-4 md:items-baseline">
-      <Card className="md:col-span-3">
+    <article className="md:grid md:grid-cols-6 md:items-baseline">
+      <Card className="md:col-span-5">
         <Card.Title href={`/${content.type}/${content.slug}`}>
+          <ChevronRightIcon className="hidden w-5 h-5 -ml-6 -mt-0.5 stroke-current md:inline-block" />
           {content.title}
         </Card.Title>
         <Card.Eyebrow
@@ -40,7 +42,7 @@ export default function Article({ contents }) {
     <>
       <Head>
         <title>
-          Revisit.fm - Thoughs and ideas from Christopher Douglas
+          Revisit.fm - Thoughs and Ideas from Christopher Douglas
         </title>
         <meta
           name="description"
@@ -48,8 +50,8 @@ export default function Article({ contents }) {
         />
       </Head>
       <SimpleLayout>
-        <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div className="flex flex-col max-w-3xl space-y-8">
+        <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700">
+          <div className="flex flex-col max-w-4xl space-y-8">
             {contents.map((content) => (
               <Content key={content.slug} content={content} />
             ))}

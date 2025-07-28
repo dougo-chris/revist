@@ -1,15 +1,13 @@
 import Head from 'next/head'
-import { formatDate } from '@/lib/formatDate'
-import { getContents } from '@/lib/getContent'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { ChevronRightIcon } from '@/components/Icons'
 
-import { tags } from '@/../content/tags.yaml'
+import sections from '@/../content/lists.yaml'
 
 function MenuItem({ tag, title, selected }) {
   return (
     <a
-      href={tag ? `/developer/${tag}` : '/developer'}
+      href={`/list/${tag}`}
       aria-selected={selected ? 'true' : 'false'}
       class="flex w-full p-1
       text-sm font-base tracking-tight
@@ -24,58 +22,48 @@ function MenuItem({ tag, title, selected }) {
 
 function Content({ content }) {
   return (
-    <article class="py-2 group hover:bg-gray-50 dark:hover:bg-zinc-800">
-      <a href={`/developer/${content.tag}/${content.slug}`}>
-        <h3 class="text-sm font-semibold text-gray-800 dark:text-white flex justify-between group-hover:text-teal-500 dark:group-hover:text-teal-400">
-          <span class="ml-2">
+    <article class="group">
+      <a href={content.href}>
+        <div class="py-2 grid grid-cols-10 group-hover:bg-gray-50 dark:group-hover:bg-zinc-800">
+          <div class="col-span-10 lg:col-span-3 text-sm font-semibold text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
             <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
             {content.title}
-          </span>
-          <span class="mr-2 text-xs text-gray-500 group-hover:text-teal-500 dark:group-hover:text-teal-400">
-            {formatDate(content.date)}
-          </span>
-        </h3>
-        <p class="ml-8 mt-0.5 text-sm text-gray-600 dark:text-gray-400">
-          {content.description}
-        </p>
+          </div>
+          <div class="col-span-9 col-start-2 lg:col-span-7 lg:col-start-0 text-xs text-gray-600 dark:text-gray-400">
+            {content.description}
+          </div>
+        </div>
       </a>
     </article>
  );
 }
 
-export default function Developer({ contents, tag }) {
+export default function List({ links, tag }) {
   return (
     <>
       <Head>
         <title>Developer - Christopher Douglas</title>
         <meta
           name="description"
-          content="Developer Tools & Techniques"
+          content="List of things I use and recommend."
         />
       </Head>
       <SimpleLayout>
         <div class="mt-8 flex flex-wrap md:flex-nowrap">
           <div class="h-full w-full md:w-[12rem] md:mr-8 md:sticky md:top-32 border-l border-zinc-100 md:pl-3 dark:border-zinc-700">
-            <MenuItem
-              key='everything'
-              tag={null}
-              title="Everything"
-              selected={'everything' == tag}
-            />
-
-            {tags.map((item) => (
+            {sections.map((section) => (
               <MenuItem
-                key={item.tag}
-                tag={item.tag}
-                title={item.title}
-                selected={item.tag == tag}
+                key={section.tag}
+                tag={section.tag}
+                title={section.title}
+                selected={section.tag == tag}
               />
             ))}
           </div>
           <div class="mt-8 md:-mt-2 w-full divide-y divide-gray-200">
-            {contents.map((content) => (
+            {links.map((content) => (
               <Content
-                key={content.slug}
+                key={content.tag}
                 content={content}
               />
             ))}
@@ -89,8 +77,8 @@ export default function Developer({ contents, tag }) {
 export async function getStaticProps() {
   return {
     props: {
-      contents: await getContents('developer'),
-      tag: 'everything',
+      links: sections[0].links,
+      tag: sections[0].tag,
     },
   }
 }

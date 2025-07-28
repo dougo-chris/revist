@@ -1,12 +1,12 @@
 import { getContents } from '@/lib/getContent'
 import Developer from '@/pages/developer'
 
-import { tags } from '@/./../content/tags.yaml'
+import { tags } from '@/../content/tags.yaml'
 
-export default function Page({ tag, contents }) {
+export default function DeveloperTag({ tag, contents }) {
   return (
     <>
-      <Developer tag={tag} contents={contents} />
+      <Developer contents={contents} tag={tag} />
     </>
   )
 }
@@ -23,8 +23,8 @@ export async function getStaticProps({ params }) {
   const contents = await getContents('developer');
   return {
     props: {
-      tag: tag,
       contents: contents.filter(content => content.tag == tag),
+      tag: tag,
     },
   }
 }

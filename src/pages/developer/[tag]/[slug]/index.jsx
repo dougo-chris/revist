@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { ArticleLayout } from '@/components/ArticleLayout'
 import { getContents, getContent } from '@/lib/getContent'
 
-export default function Page({ content, previousPathname }) {
+export default function DeveloperTagSlug({ content }) {
   return (
     <>
       <ArticleLayout

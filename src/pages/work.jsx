@@ -7,11 +7,12 @@ function getWork() {
   return {
     heading:'Software Engineer & Founder.',
     details: [
-      'Experienced software developer with 25+ years building scalable, high-performance' +
-        ' applications across diverse technology stacks. Proven expertise in distributed systems,' +
-        ' real-time data processing, and full-stack development.',
-      ' Strong track record of architecting solutions that handle massive scale (90M+ metrics every 5 minutes) while maintaining reliability and performance.',
-      ' Combines deep technical knowledge with leadership experience to deliver robust software solutions.',
+      'I\'m a seasoned software developer based in Melbourne.',
+      'For the last 5 years I\'ve worked on large scale backend systems that process millions of records and are critical to maintaining network availability',
+      'I currently lead a team migrating UIs from a historic Ruby on Rails application to React through the use of APIs and services.',
+      'I was previously the first employee for a startup building recommendations engines used by online music and video services.' + 
+        ' The company was sold to Microsoft where I continued to work for a number of years.',
+      'I\'m a hands on developer, with startup experience, who leads teams by being with them in doing the work.'
     ]
   }
 }
