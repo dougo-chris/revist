@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import clsx from 'clsx'
+
 import { useId } from 'react'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { ChevronRightIcon } from '@/components/Icons'
-import { getLinksGroupedBy } from '@/lib/getLink'
-import { formatDateShort } from '@/lib/formatDate'
 
-function Section({ title, children, groupedBy }) {
+import sections from '@/../content/links.yaml'
+
+function Section({ section, children }) {
   let id = useId()
 
   return (
@@ -20,7 +19,7 @@ function Section({ title, children, groupedBy }) {
           id={id}
           className="text-sm font-semibold text-zinc-800 dark:text-zinc-100"
         >
-          {groupedBy === 'date' ? formatDateShort(title) : title}
+          {section}
         </h2>
         <div className="md:col-span-3">{children}</div>
       </div>
@@ -38,19 +37,16 @@ function ListSection({ children, ...props }) {
   )
 }
 
-function ListItem({ item, groupedBy }) {
-  const { title, description, href } = item
+function ListLink({ link }) {
+  const { title, description, href } = link;
   return (
     <div className="flex py-4 group first:pt-0">
       <a class="w-full" href={href} target="_blank">
-        <h3 class="flex justify-between text-sm font-base text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
+        <h3 class="text-sm font-base text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
           <div>
             <ChevronRightIcon className="inline-block w-4 h-4 stroke-current" />
             <span class="ml-2 font-medium">{title}</span>
           </div>
-          <p class="flex text-xs text-right text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
-            {groupedBy === 'tag' ? formatDateShort(item.date) :  item.tag}
-          </p>
         </h3>
         {description && (
           <p class="ml-8 text-xs text-gray-600 dark:text-gray-400">
@@ -62,7 +58,7 @@ function ListItem({ item, groupedBy }) {
   )
 }
 
-export default function Links({ links, groupedBy }) {
+export default function Links() {
   return (
     <>
       <Head>
@@ -73,41 +69,16 @@ export default function Links({ links, groupedBy }) {
         />
       </Head>
       <SimpleLayout>
-        <div class="flex justify-center space-x-8">
-          <Link
-            href="/links/date"
-            className={clsx(
-              'text-sm font-base',
-              groupedBy === 'date'
-                ? 'text-teal-500 dark:text-teal-400'
-                : 'text-zinc-800 dark:text-zinc-200 hover:text-teal-500 dark:hover:text-teal-400'
-            )}
-          >
-            <ChevronRightIcon className="inline-block w-4 h-4 stroke-current" />
-            By Date
-          </Link>
-
-          <Link
-            href="/links/tag"
-            className={clsx(
-              'text-sm font-base',
-              groupedBy === 'tag'
-                ? 'text-teal-500 dark:text-teal-400'
-                : 'text-zinc-800 dark:text-zinc-200 hover:text-teal-500 dark:hover:text-teal-400'
-            )}
-          >
-            <ChevronRightIcon className="inline-block w-4 h-4 stroke-current" />
-            By Tag
-          </Link>
-        </div>
-        <div className="mt-8 space-y-8">
-          {Object.keys(links).map((title, sectionId) => (
-            <ListSection title={title}>
-              {links[title].map((item, linkId) => (
-                <ListItem
-                  key={`${sectionId}-${linkId}`}
-                  item={item}
-                  groupedBy={groupedBy}
+        <div className="space-y-8">
+          {sections.map(({section, links}, sectionId) => (
+            <ListSection 
+              key={`section_${sectionId}`}
+              section={section}
+            >
+              {links.map((link, linkId) => (
+                <ListLink
+                  key={`item_${sectionId}-${linkId}`}
+                  link={link}
                 />
               ))}
             </ListSection>
@@ -116,13 +87,4 @@ export default function Links({ links, groupedBy }) {
       </SimpleLayout>
     </>
   )
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      links: await getLinksGroupedBy('date'),
-      groupedBy: 'date',
-    },
-  }
 }
