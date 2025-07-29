@@ -46,7 +46,7 @@ export function ArticleLayout({children, meta, isRssFeed = false, previousPathna
             )}
             <article>
               <header className="flex flex-col">
-                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
                   {meta.title}
                 </h1>
                 <time
@@ -57,7 +57,7 @@ export function ArticleLayout({children, meta, isRssFeed = false, previousPathna
                   <span className="ml-3">{formatDate(meta.date)}</span>
                 </time>
               </header>
-              <Prose className="mt-8">{children}</Prose>
+              <Prose className="mt-2">{children}</Prose>
             </article>
           </div>
         </div>
