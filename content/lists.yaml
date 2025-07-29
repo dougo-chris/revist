@@ -208,7 +208,7 @@
       href: 'https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker'
 
     - title: 'Markdown PDF'
-      description: 'I use markldown a lot. This makes it easy to export and share'
+      description: 'I use markdown a lot. This makes it easy to export and share'
       href: 'https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf'
 
     - title: 'Draw.io integration'

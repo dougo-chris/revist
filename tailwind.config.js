@@ -27,8 +27,7 @@ module.exports = {
           '--tw-prose-links': 'var(--tw-prose-invert-links)',
           '--tw-prose-links-hover': 'var(--tw-prose-invert-links-hover)',
           '--tw-prose-underline': 'var(--tw-prose-invert-underline)',
-          '--tw-prose-underline-hover':
-            'var(--tw-prose-invert-underline-hover)',
+          '--tw-prose-underline-hover': 'var(--tw-prose-invert-underline-hover)',
           '--tw-prose-bold': 'var(--tw-prose-invert-bold)',
           '--tw-prose-counters': 'var(--tw-prose-invert-counters)',
           '--tw-prose-bullets': 'var(--tw-prose-invert-bullets)',
@@ -88,18 +87,19 @@ module.exports = {
 
           // Base
           color: 'var(--tw-prose-body)',
-          lineHeight: theme('lineHeight.7'),
+          lineHeight: theme('lineHeight.5'),
           '> *': {
-            marginTop: theme('spacing.10'),
-            marginBottom: theme('spacing.10'),
+            marginTop: theme('spacing.5'),
+            marginBottom: theme('spacing.5'),
           },
           p: {
-            marginTop: theme('spacing.7'),
-            marginBottom: theme('spacing.7'),
+            marginTop: theme('spacing.6'),
+            marginBottom: theme('spacing.4'),
           },
 
           // Headings
           'h2, h3': {
+            marginTop: theme('spacing.10'),
             color: 'var(--tw-prose-headings)',
             fontWeight: theme('fontWeight.semibold'),
           },
@@ -118,7 +118,6 @@ module.exports = {
           ':is(h2, h3) + *': {
             marginTop: 0,
           },
-
           // Images
           img: {
             borderRadius: theme('borderRadius.3xl'),
@@ -161,10 +160,15 @@ module.exports = {
 
           // Quotes
           blockquote: {
+            marginTop: theme('spacing.6'),
             paddingLeft: theme('spacing.6'),
             borderLeftWidth: theme('borderWidth.2'),
             borderLeftColor: 'var(--tw-prose-quote-borders)',
-            fontStyle: 'italic',
+            // fontStyle: 'italic',
+            fontWeight: theme('fontWeight.semibold'),
+          },
+          ':is(h2, h3) + blockquote': {
+            marginTop: 0,
           },
 
           // Figures
