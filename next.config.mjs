@@ -23,7 +23,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  pageExtensions: ['js', 'jsx', 'md', 'yaml'],
+  pageExtensions: ['js', 'jsx'],
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,

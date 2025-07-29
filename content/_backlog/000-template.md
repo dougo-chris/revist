@@ -9,6 +9,8 @@ description: "What makes this interesting"
 
 Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
 
+![TEST](/images/_backlog/000/test.drawio.svg)
+
 I knew that to get it right I was going to have to replicate the viewing conditions of someone from the future, so I grabbed my space helmet from the closet, created a new Figma document, and got to work.
 
 ## Sermone fata

@@ -24,7 +24,7 @@ function getIndex() {
       'Previously I was the first employee for a startup building recommendations engines used by online music and video services.' +
         ' The company was sold to Microsoft where I continued to work for a number of years.',
       'I\'m a hands on developer, with startup experience, who leads teams by being with them in doing the work.'
-  ]
+    ]
   }
 }
 
