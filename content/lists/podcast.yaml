@@ -1,108 +1,96 @@
 links:
   - title: "This Working Life"
-    href: "https://www.abc.net.au/feeds/7104462/podcast.xml"
+    href: "https://www.abc.net.au/listen/programs/this-working-life/"
 
   - title: "In The Blink of AI"
-    href: "https://feeds.captivate.fm/blink-of-ai-dayone/"
+    href: "https://dayone.fm/show/in-the-blink-of-ai"
 
   - title: "Empire"
-    href: "https://feeds.megaphone.fm/empirepodcast"
+    href: "https://empirepod.supportingcast.fm/"
 
   - title: "Built to Sell Radio"
-    href: "https://builttosell.libsyn.com/rss"
+    href: "https://builttosell.com/podcast/"
 
   - title: "The Contrarians"
-    href: "https://www.omnycontent.com/d/playlist/88b564ea-a9a6-4751-910a-a5d800019396/18a0368f-0322-48e4-8e5c-b2fa006bbc08/1afe037e-3381-4acc-afc1-b2fa006bbc35/podcast.rss"
-
-  - title: "Build Your SaaS"
-    href: "https://feeds.transistor.fm/build-your-saas"
+    href: "https://www.thecontrarianspod.com/"
 
   - title: "Scamfluencers"
-    href: "https://rss.art19.com/scamfluencers"
+    href: "https://wondery.com/shows/scamfluencers/"
 
   - title: "Pick My Brain"
-    href: "https://feeds.captivate.fm/pick-my-brain-dayonefm/"
+    href: "https://dayone.fm/show/pick-my-brain"
 
   - title: "Planet Money"
-    href: "https://feeds.npr.org/510289/podcast.xml"
+    href: "https://www.npr.org/podcasts/510289/planet-money"
 
   - title: "Slow & Steady"
-    href: "https://feeds.transistor.fm/slow-steady"
+    href: "https://slowandsteadypodcast.com/"
 
   - title: "The $100 MBA Show"
-    href: "https://feeds.simplecast.com/equXS9ic"
+    href: "https://100mba.net/show/"
 
   - title: "Startup to Last"
-    href: "https://feeds.transistor.fm/startup-to-last"
+    href: "https://www.startuptolast.com/"
 
   - title: "If You're Listening"
-    href: "https://www.abc.net.au/feeds/9593214/podcast.xml"
-
-  - title: "Bootstrapped Web"
-    href: "https://feeds.transistor.fm/bootstrapped-web"
+    href: "https://www.abc.net.au/listen/programs/if-youre-listening/"
 
   - title: "Thinking Elixir Podcast"
-    href: "https://feeds.fireside.fm/thinkingelixir/rss"
+    href: "https://podcast.thinkingelixir.com"
 
   - title: "Acquired"
-    href: "https://feeds.transistor.fm/acquired"
-
-  - title: "Hackers Incorporated"
-    href: "https://feeds.transistor.fm/hackers-inc"
+    href: "https://www.acquired.fm"
 
   - title: "Rework"
-    href: "https://feeds.buzzsprout.com/2260539.rss"
+    href: "https://37signals.com/podcast/"
 
   - title: "My First Million"
-    href: "https://feeds.megaphone.fm/HS2300184645"
+    href: "https://www.mfmpod.com"
 
   - title: "Open the Pod Bay Doors"
-    href: "https://www.omnycontent.com/d/playlist/9c434ae7-dbdc-45ab-9d27-aed80050a466/7f49a175-f407-46af-bda8-aed80050d4be/6c9c125b-0f0e-4794-90fe-aed80050d4cc/podcast.rss"
+    href: "https://innovationbay.com/"
 
   - title: "British Scandal"
-    href: "https://rss.art19.com/british-scandal"
+    href: "https://wondery.com/shows/british-scandal/"
 
   - title: "First Cheque"
-    href: "https://feeds.captivate.fm/first-cheque-dayone/"
+    href: "https://dayone.fm/show/first-cheque"
 
   - title: "Startups For the Rest of Us"
-    href: "https://feeds.castos.com/mqv6"
+    href: "https://www.startupsfortherestofus.com"
 
   - title: "Mostly Technical"
-    href: "https://feeds.transistor.fm/mostly-technical"
+    href: "https://mostlytechnical.com"
 
   - title: "The Big Flop"
-    href: "https://rss.art19.com/the-big-flop"
-
-  - title: "Product Journey"
-    href: "https://feeds.transistor.fm/product-journey"
+    href: "https://wondery.com/shows/the-big-flop/"
 
   - title: "Tropical MBA"
-    href: "https://feeds.fireside.fm/tropicalmba/rss"
+    href: "http://www.TropicalMBA.com/episodes"
 
   - title: "The Foundr Podcast"
-    href: "https://feeds.megaphone.fm/YAP2464511803"
+    href: "http://www.foundr.com"
 
   - title: "Startup Acquisition Stories"
-    href: "https://anchor.fm/s/71db7ab0/podcast/rss"
+    href: "https://www.youtube.com/playlist?list=PLO30Q8WzVLKPnZpIOIZ2sR817n24fNJFI"
 
   - title: "The Startup Playbook"
-    href: "https://startupplaybook.co/feed/podcast/"
+    href: "https://startupplaybook.co"
 
   - title: "Politics Now"
-    href: "https://www.abc.net.au/feeds/7288214/podcast.xml"
+    href: "https://www.abc.net.au/listen/programs/politics-now/"
 
   - title: "The Bootstrapped Founder"
-    href: "https://feeds.transistor.fm/bootstrapped-founder"
+    href: "https://thebootstrappedfounder.com/"
 
   - title: "The Panel"
-    href: "https://feeds.transistor.fm/the-panel"
+    href: "https://panelpodcast.com"
 
   - title: "Trump's Terms"
-    href: "https://feeds.npr.org/510374/podcast.xml"
+    href: "https://www.npr.org/podcasts/510374/trumps-terms"
 
   - title: "Rogue Startups"
-    href: "https://feeds.castos.com/e69d"
+    href: "https://roguestartups.com"
 
 archived:
   - title: "Brydon &amp;"
@@ -152,3 +140,16 @@ archived:
 
   - title: "Software Social"
     href: "https://feeds.transistor.fm/software-social"
+
+  - title: "Build Your SaaS"
+    href: "https://feeds.transistor.fm/build-your-saas"
+
+  - title: "Bootstrapped Web"
+    href: "https://feeds.transistor.fm/bootstrapped-web"
+
+  - title: "Hackers Incorporated"
+    href: "https://feeds.transistor.fm/hackers-inc"
+
+  - title: "Product Journey"
+    href: "https://feeds.transistor.fm/product-journey"
+
