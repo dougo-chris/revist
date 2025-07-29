@@ -4,14 +4,18 @@ date: "2025-07-29"
 description: "To get used to writing content and overcoming the fear of writing I've set myself a challenge to write about what I'm building every day for the next 90 days."
 ---
 
-> It's not about building an audience. It's about learning to be a better communicator.
+I've given myself a challenge to write content for this blog every day for 90 days. The content of the blog will be about me building [FolioReady](https://folioready.com) as a solo developer
 
-> What's stopped me doing this before?
+### It's not about building an audience. It's about learning to be a better communicator.
 
-> How could I have _"Imposter Syndrome"_ with this much experience?
+I work on code, design, sales, and everything else that needs to be done. While not everything will be interesting. It will be about what I'm doing and how I do it.
 
-> What's the worst thing that can happen?
+I've been a software developer for 30 years. I'm always looking into new technologies to make sure I have the relevant skills for today's job market.
+Taking notes about what I have learn't is something I've always done. So now it's time to articulate the learnings into something I can share with others.
 
+### What's the worst thing that can happen?
+
+No traffic. But that's what I've got now. As long as I stay true to what I do and what I think all will be fine.
 
 ## The Plan
 

@@ -1,6 +1,6 @@
 import List from '@/pages/list'
 
-import sections from '@/../content/lists.yaml'
+import sections from 'content/lists.yaml'
 
 export default function ListTag({ links, tag }) {
   return (
@@ -19,7 +19,7 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({ params }) {
   const { tag } = params;
-  const { links } = await import(`@/../content/lists/${tag}.yaml`);
+  const { links } = await import(`content/lists/${tag}.yaml`);
 
   return {
     props: {

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { ChevronRightIcon } from '@/components/Icons'
 
-import sections from '@/../content/lists.yaml'
+import sections from 'content/lists.yaml'
 
 function MenuItem({ tag, title, current }) {
   return (
@@ -73,7 +73,7 @@ export default function List({ links, tag }) {
 
 export async function getStaticProps() {
   const { tag } = sections[0]
-  const { links } = await import(`@/../content/lists/${tag}.yaml`);
+  const { links } = await import(`content/lists/${tag}.yaml`);
 
   return {
     props: {

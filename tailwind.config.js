@@ -87,7 +87,7 @@ module.exports = {
 
           // Base
           color: 'var(--tw-prose-body)',
-          lineHeight: theme('lineHeight.5'),
+          lineHeight: theme('lineHeight.7'),
           '> *': {
             marginTop: theme('spacing.5'),
             marginBottom: theme('spacing.5'),
