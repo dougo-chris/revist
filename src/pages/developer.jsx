@@ -10,10 +10,10 @@ function MenuItem({ tag, title, selected }) {
   return (
     <a
       href={tag ? `/developer/${tag}` : '/developer'}
-      aria-current={selected ? 'true' : 'false'}
-      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-current:text-teal-500 aria-current:dark:text-teal-400"
+      aria-selected={selected ? 'true' : 'false'}
+      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-selected:text-teal-500 aria-selected:dark:text-teal-400"
     >
-      <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
+      <ChevronRightIcon className="inline-block w-5 h-5 mt-0.5 stroke-current" />
       {title}
     </a>
   );

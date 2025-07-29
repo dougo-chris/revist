@@ -8,10 +8,10 @@ function MenuItem({ tag, title, current }) {
   return (
     <a
       href={`/list/${tag}`}
-      aria-current={current ? 'true' : 'false'}
-      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-current:text-teal-500 aria-current:dark:text-teal-400"
+      aria-selected={current ? 'true' : 'false'}
+      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-selected:text-teal-500 aria-selected:dark:text-teal-400"
     >
-      <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
+      <ChevronRightIcon className="inline-block w-5 h-5 mt-0.5 stroke-current" />
       {title}
     </a>
   );
@@ -23,7 +23,7 @@ function Content({ content }) {
       <a href={content.href}>
         <div className="grid grid-cols-10 py-2 group-hover:bg-gray-50 dark:group-hover:bg-zinc-800">
           <div className="col-span-10 text-sm font-semibold text-gray-800 lg:col-span-3 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
-            <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
+            <ChevronRightIcon className="inline-block w-5 h-5 -mt-0.5 stroke-current" />
             {content.title}
           </div>
           <div className="col-span-9 col-start-2 text-xs text-gray-600 lg:col-span-7 lg:col-start-0 dark:text-gray-400">

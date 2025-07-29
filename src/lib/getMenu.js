@@ -1,5 +1,5 @@
 export function getMenu() {
-  return [
+  const menu = [
     {
       name: 'Articles',
       href: '/article',
@@ -21,4 +21,12 @@ export function getMenu() {
       href: '/about',
     },
   ]
+  if (process.env.NODE_ENV !== 'production') {
+    menu.push({
+      name: 'Backlog',
+      href: '/backlog',
+    });
+  }
+
+  return menu;
 };
