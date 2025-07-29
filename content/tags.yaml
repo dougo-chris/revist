@@ -2,10 +2,10 @@ tags:
   - title: 'Elixir'
     tag: 'elixir'
 
+todo:
   - title: 'Ruby'
     tag: 'ruby'
 
-todo:
   - title: 'FolioReady'
     tag: 'folio-ready'
 

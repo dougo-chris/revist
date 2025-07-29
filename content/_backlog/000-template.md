@@ -1,9 +1,11 @@
 ---
-title: "Ruby-001"
-tag: "ruby"
-date: "2022-09-02"
-description: "Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system."
+title: "My really cool new blog"
+date: "2025-07-29"
+tag: "todo"
+description: "What makes this interesting"
 ---
+
+## Level 2 Title
 
 Most companies try to stay ahead of the curve when it comes to visual design, but for Planetaria we needed to create a brand that would still inspire us 100 years from now when humanity has spread across our entire solar system.
 

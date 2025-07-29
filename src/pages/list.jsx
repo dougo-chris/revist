@@ -35,14 +35,14 @@ function Content({ content }) {
  );
 }
 
-export default function List({ links, tag }) {
+export default function List({ links, tag, description }) {
   return (
     <>
       <Head>
         <title>Developer - Christopher Douglas</title>
         <meta
           name="description"
-          content="List of things I use and recommend."
+          content={description || 'List of things I use and recommend.'}
         />
       </Head>
       <SimpleLayout>
@@ -58,6 +58,11 @@ export default function List({ links, tag }) {
             ))}
           </div>
           <div className="w-full mt-8 divide-y divide-gray-200 md:-mt-2">
+            {description && (
+              <p className="mb-2 text-sm text-gray-600 dark:text-gray-400">
+                {description}
+              </p>
+            )}
             {links.map((content, index) => (
               <Content
                 key={`link_${content.tag}_${index}`}
@@ -72,13 +77,14 @@ export default function List({ links, tag }) {
 }
 
 export async function getStaticProps() {
-  const { tag } = sections[0]
-  const { links } = await import(`content/lists/${tag}.yaml`);
+  const section = sections[0]
+  const { links } = await import(`content/list/${section.tag}.yaml`);
 
   return {
     props: {
       links: links,
-      tag: sections[0].tag,
+      tag: section.tag,
+      description: section.description,
     },
   }
 }

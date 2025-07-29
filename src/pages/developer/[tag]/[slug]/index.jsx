@@ -1,4 +1,6 @@
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import rehypePrism from '@mapbox/rehype-prism'
 
 import { ArticleLayout } from '@/components/ArticleLayout'
 import { getContents, getContent } from '@/lib/getContent'
@@ -14,7 +16,10 @@ export default function DeveloperTagSlug({ content }) {
         }}
         previousPathname={`/developer/${content.tag}`}
       >
-        <ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypePrism]}
+          >
           {content.content}
         </ReactMarkdown>
       </ArticleLayout>
