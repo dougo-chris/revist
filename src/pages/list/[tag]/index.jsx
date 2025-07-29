@@ -19,9 +19,7 @@ export const getStaticPaths = async () => {
 
 export async function getStaticProps({ params }) {
   const { tag } = params;
-
-  const section = sections.find(section => section.tag  == tag);
-  const links = section ? section.links : [];
+  const { links } = await import(`@/../content/lists/${tag}.yaml`);
 
   return {
     props: {

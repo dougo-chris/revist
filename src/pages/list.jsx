@@ -72,9 +72,12 @@ export default function List({ links, tag }) {
 }
 
 export async function getStaticProps() {
+  const { tag } = sections[0]
+  const { links } = await import(`@/../content/lists/${tag}.yaml`);
+
   return {
     props: {
-      links: sections[0].links,
+      links: links,
       tag: sections[0].tag,
     },
   }
