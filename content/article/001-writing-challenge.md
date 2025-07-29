@@ -37,5 +37,5 @@ I know it will be awkward at it, but I'm hoping the more I do the work the bette
 I've always learnt new things by doing them and getting better over time.
 
 ### Don't use AI !!!
-AI is great, but while I'm learning to be the author. I'm happy to use AI in the research, but when creating content I need to learn how to put together the words and sentences myself.
+AI is great, but while I'm learning to be the author I will write the words. I'm happy to use AI in the research, but not for creating content.
 
