@@ -30,9 +30,10 @@ export async function getContents(type) {
 }
 
 export async function getAllContents() {
-  let filenames = await glob(['**/*.md'], {
+  let filenames = await glob(['article/**/*.md', 'developer/**/*.md'], {
     cwd: path.join(process.cwd(), `./content`),
   })
+  console.log('filenames', filenames )
 
   let contents = await Promise.all(filenames.map((filename) => {
     const [type, basename] = filename.split('/');

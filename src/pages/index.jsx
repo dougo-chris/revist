@@ -11,6 +11,9 @@ import {
 } from '@/components/Icons'
 import portraitImage from '@/images/portrait.jpg'
 
+import { getAllContents } from '@/lib/getContent'
+import { generateRssFeed } from '@/lib/generateRssFeed'
+
 function getIndex() {
   return {
     heading:'Software Engineer & Founder.',
@@ -99,4 +102,16 @@ export default function Index() {
       </Container>
     </>
   )
+}
+
+export async function getStaticProps() {
+  if (process.env.NODE_ENV === 'production') {
+    
+    let contents = await getAllContents()
+    await generateRssFeed({ contents })
+  }
+
+ return {
+    props: {},
+  }
 }

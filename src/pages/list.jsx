@@ -4,15 +4,12 @@ import { ChevronRightIcon } from '@/components/Icons'
 
 import sections from '@/../content/lists.yaml'
 
-function MenuItem({ tag, title, selected }) {
+function MenuItem({ tag, title, current }) {
   return (
     <a
       href={`/list/${tag}`}
-      aria-selected={selected ? 'true' : 'false'}
-      class="flex w-full p-1
-      text-sm font-base tracking-tight
-      dark:text-gray-100
-      aria-selected:text-teal-500 aria-selected:dark:text-teal-400"
+      aria-current={current ? 'true' : 'false'}
+      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-current:text-teal-500 aria-current:dark:text-teal-400"
     >
       <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
       {title}
@@ -22,14 +19,14 @@ function MenuItem({ tag, title, selected }) {
 
 function Content({ content }) {
   return (
-    <article class="group">
+    <article className="group">
       <a href={content.href}>
-        <div class="py-2 grid grid-cols-10 group-hover:bg-gray-50 dark:group-hover:bg-zinc-800">
-          <div class="col-span-10 lg:col-span-3 text-sm font-semibold text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
+        <div className="grid grid-cols-10 py-2 group-hover:bg-gray-50 dark:group-hover:bg-zinc-800">
+          <div className="col-span-10 text-sm font-semibold text-gray-800 lg:col-span-3 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
             <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
             {content.title}
           </div>
-          <div class="col-span-9 col-start-2 lg:col-span-7 lg:col-start-0 text-xs text-gray-600 dark:text-gray-400">
+          <div className="col-span-9 col-start-2 text-xs text-gray-600 lg:col-span-7 lg:col-start-0 dark:text-gray-400">
             {content.description}
           </div>
         </div>
@@ -49,21 +46,21 @@ export default function List({ links, tag }) {
         />
       </Head>
       <SimpleLayout>
-        <div class="mt-8 flex flex-wrap md:flex-nowrap">
-          <div class="h-full w-full md:w-[12rem] md:mr-8 md:sticky md:top-32 border-l border-zinc-100 md:pl-3 dark:border-zinc-700">
+        <div className="flex flex-wrap mt-8 md:flex-nowrap">
+          <div className="h-full w-full md:w-[12rem] md:mr-8 md:sticky md:top-32 border-l border-zinc-100 md:pl-3 dark:border-zinc-700">
             {sections.map((section) => (
               <MenuItem
                 key={section.tag}
                 tag={section.tag}
                 title={section.title}
-                selected={section.tag == tag}
+                current={section.tag == tag}
               />
             ))}
           </div>
-          <div class="mt-8 md:-mt-2 w-full divide-y divide-gray-200">
-            {links.map((content) => (
+          <div className="w-full mt-8 divide-y divide-gray-200 md:-mt-2">
+            {links.map((content, index) => (
               <Content
-                key={content.tag}
+                key={`link_${content.tag}_${index}`}
                 content={content}
               />
             ))}

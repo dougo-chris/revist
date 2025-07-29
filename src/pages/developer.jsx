@@ -10,11 +10,8 @@ function MenuItem({ tag, title, selected }) {
   return (
     <a
       href={tag ? `/developer/${tag}` : '/developer'}
-      aria-selected={selected ? 'true' : 'false'}
-      class="flex w-full p-1
-      text-sm font-base tracking-tight
-      dark:text-gray-100
-      aria-selected:text-teal-500 aria-selected:dark:text-teal-400"
+      aria-current={selected ? 'true' : 'false'}
+      className="flex w-full p-1 text-sm tracking-tight font-base dark:text-gray-100 aria-current:text-teal-500 aria-current:dark:text-teal-400"
     >
       <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
       {title}
@@ -24,18 +21,18 @@ function MenuItem({ tag, title, selected }) {
 
 function Content({ content }) {
   return (
-    <article class="py-2 group hover:bg-gray-50 dark:hover:bg-zinc-800">
+    <article className="py-2 group hover:bg-gray-50 dark:hover:bg-zinc-800">
       <a href={`/developer/${content.tag}/${content.slug}`}>
-        <h3 class="text-sm font-semibold text-gray-800 dark:text-white flex justify-between group-hover:text-teal-500 dark:group-hover:text-teal-400">
-          <span class="ml-2">
+        <h3 className="flex justify-between text-sm font-semibold text-gray-800 dark:text-white group-hover:text-teal-500 dark:group-hover:text-teal-400">
+          <span className="ml-2">
             <ChevronRightIcon className="inline-block w-5 h-5 stroke-current" />
             {content.title}
           </span>
-          <span class="mr-2 text-xs text-gray-500 group-hover:text-teal-500 dark:group-hover:text-teal-400">
+          <span className="mr-2 text-xs text-gray-500 group-hover:text-teal-500 dark:group-hover:text-teal-400">
             {formatDate(content.date)}
           </span>
         </h3>
-        <p class="ml-8 mt-0.5 text-sm text-gray-600 dark:text-gray-400">
+        <p className="ml-8 mt-0.5 text-sm text-gray-600 dark:text-gray-400">
           {content.description}
         </p>
       </a>
@@ -54,8 +51,8 @@ export default function Developer({ contents, tag }) {
         />
       </Head>
       <SimpleLayout>
-        <div class="mt-8 flex flex-wrap md:flex-nowrap">
-          <div class="h-full w-full md:w-[12rem] md:mr-8 md:sticky md:top-32 border-l border-zinc-100 md:pl-3 dark:border-zinc-700">
+        <div className="flex flex-wrap mt-8 md:flex-nowrap">
+          <div className="h-full w-full md:w-[12rem] md:mr-8 md:sticky md:top-32 border-l border-zinc-100 md:pl-3 dark:border-zinc-700">
             <MenuItem
               key='everything'
               tag={null}
@@ -72,7 +69,7 @@ export default function Developer({ contents, tag }) {
               />
             ))}
           </div>
-          <div class="mt-8 md:-mt-2 w-full divide-y divide-gray-200">
+          <div className="w-full mt-8 divide-y divide-gray-200 md:-mt-2">
             {contents.map((content) => (
               <Content
                 key={content.slug}
