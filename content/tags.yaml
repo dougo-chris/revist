@@ -2,6 +2,9 @@ tags:
   - title: 'Elixir'
     tag: 'elixir'
 
+  - title: 'CSS'
+    tag: 'css'
+
 todo:
   - title: 'Ruby'
     tag: 'ruby'
