@@ -113,7 +113,7 @@ module.exports = {
             fontSize: theme('fontSize.base')[0],
             lineHeight: theme('lineHeight.7'),
             marginTop: theme('spacing.08'),
-            marginBottom: theme('spacing.4'),
+            marginBottom: theme('spacing.2'),
           },
           ':is(h2, h3) + *': {
             marginTop: 0,

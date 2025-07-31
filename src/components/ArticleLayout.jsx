@@ -33,7 +33,7 @@ export function ArticleLayout({children, meta, isRssFeed = false, previousPathna
       </Head>
       <Container className="mt-8 sm:mt-16">
         <div className="xl:relative">
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             {previousPathname && (
               <button
                 type="button"
