@@ -92,6 +92,9 @@ links:
   - title: "Rogue Startups"
     href: "https://roguestartups.com"
 
+  - title: "Lenny's Podcast: Product | Growth | Career"
+    href: "https://www.lennysnewsletter.com/podcast"
+
 archived:
   - title: "Brydon &amp;"
     href: "https://rss.art19.com/brydon"
@@ -113,9 +116,6 @@ archived:
 
   - title: "Unfunded"
     href: "https://feeds.captivate.fm/unfunded-dayone/"
-
-  - title: "Lenny's Podcast: Product | Growth | Career"
-    href: "https://api.substack.com/feed/podcast/10845.rss"
 
   - title: "The Minefield"
     href: "https://www.abc.net.au/feeds/6344904/podcast.xml"
