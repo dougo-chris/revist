@@ -7,10 +7,10 @@
 - Open in Chrome & find the `enclosure url`
 
 - Get the episode
-`wget https://api.substack.com/feed/podcast/168435278/c5a06957a04b1db4db041701a785c0f8.mp3`
+  - `wget https://.../episode.mp3`
 
 - Load the mp3 into Audiate
-This can take a while.
+  - This can take a while.
 
 - Load into Claude and ask questions. Don't just get it to summarize.
 
