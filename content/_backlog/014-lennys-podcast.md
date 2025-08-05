@@ -1,71 +1,57 @@
-# The upside of ageing
+# What thorny problem are you facing and how can I fix it for you.
+> https://www.lennysnewsletter.com/p/chip-conley
 
-Yes, Chip is passionate about reframing aging from something to fear into something with genuine upsides. This is central to his work and based on both research and personal experience.
+Yes, this was part of Chip's advice for older workers trying to get their foot in the door at companies, especially in tech. Here's the context:
 
-## The Cultural Problem
+## The Challenge for Older Workers
 
-Chip identified that society has a deeply negative view of aging:
+Chip acknowledged that not everyone gets recruited like he was:
 
-> "There's a belief that life gets worse as you get older. And, um, and if you can survive your midlife crisis, all you have to look forward to is disease decrepitude and death."
+> "I'm privileged. So for those of you who are listening or watching this, and you're saying, well, you know, Chip, you were fifty two years old and they came to you. Like, that doesn't happen to me. I'm not in that position."
 
-He contrasts this with his book "Learning to Love Midlife" which has the subtitle: **"twelve reasons why life gets better with age."**
+## The Strategic Approach
 
-## The Research: U-Curve of Happiness
+Instead of the traditional resume approach, Chip suggested leading with **problem-solving value**:
 
-Chip cited global research showing the "U-curve of happiness":
+> "I think it was... someone asked it. I don't remember if it's Sheryl Sandberg or someone else asked her. He said, like, what's the biggest problem you're dealing with here? And how can I help you? Like that's a great that's a great line."
 
-- **Ages 18-24**: Generally happy
-- **Ages 24-50**: Slow decline in life satisfaction, bottoming out around 45-50
-- **Ages 50+**: Steady increase in happiness
-- **The pattern**: People are happier in their 50s than 40s, 60s than 50s, 70s than 60s, etc.
+## Why This Works
 
-> "I'm happier today at sixty four than I was at forty seven when I was going through my flatline experience."
+This approach is powerful because:
 
-## Specific Upsides of Aging
+**1. It's Customer-Focused**
+- You're immediately thinking about their needs, not your needs for a job
 
-Chip mentioned several concrete benefits:
+**2. It Demonstrates Value First**
+- Rather than asking "What can you do for me?" you're asking "What can I do for you?"
 
-**1. Emotional Intelligence Growth**
-- This naturally develops with age and experience
+**3. It Leverages Experience**
+- Older workers often have diverse experience solving complex problems across different contexts
 
-**2. Enhanced Wisdom** 
-- Though not automatic - requires processing life experience mindfully
+**4. It Gets Past Ageism**
+- Instead of focusing on age/credentials, you're focusing on solving actual business pain points
 
-**3. Learning to Edit**
-- > "You can't you you have no more f's left to give. No more fucks left to give. There that is absolutely true, especially for women as they age."
+## The Resume Revolution
 
-**4. Spiritual Curiosity**
-- Greater interest in meaning and purpose
+Chip also suggested completely rethinking resumes for older workers:
 
-**5. Becoming Whole vs. Compartmentalized**
-- > "When you're younger, you're compartmentalized. As you go grow older, you are growing whole."
-- Integration of different aspects of personality (introvert/extrovert, masculine/feminine, etc.)
+> "What I love to see is not so much what roles you've had, what bullet points do you have of yours like things you've learned... Give me in a paragraph... a thorny problem you faced. Um, what what was the problem and how you got how you what skills you used to actually accomplish it, and what was the result of that."
 
-**6. Presence and Authenticity**
-- > "The people who I really admire who are eighty five years old, they're so present and they're so whole. They're like, they are just who they are."
+## The Advantage of Age
 
-## The Health Impact
+He noted this approach particularly benefits older workers:
 
-Most remarkably, Chip cited Becca Levy's Yale research:
+> "I would love to see a resume like that. And the older you are, the more you can actually have a resume like that. And then you can use that as the conversation piece when you're doing inter your interviews."
 
-> "When you shift your mindset on aging from a negative to a positive, you get seven and a half years of additional life, which is more life than any other biohack that's being done right now."
+## Practical Application
 
-## Pro-Aging vs. Anti-Aging
+Instead of:
+- "I was VP of Marketing at Company X for 5 years"
+- Generic bullet points about responsibilities
 
-Chip advocates for a **"pro-aging"** rather than just **"anti-aging"** mindset:
+Try:
+- "Company X was losing market share to a disruptive competitor. I identified that our messaging was too technical for decision-makers. I developed a new positioning strategy that resulted in 30% increase in qualified leads within 6 months."
 
-> "When you actually have a pro aging point of view and you see the upside of aging, you take better care of yourself. Both your mind and your body. You actually are willing to learn and try new things."
+The key is **leading with the problem** you solved, not the title you held. This immediately demonstrates your value and gives interviewers a concrete example of how you think and operate.
 
-## Personal Example
-
-He illustrated this with his own experience moving to Baja at 56:
-
-> "I had a mindset which was I'm too old to learn Spanish. I'm too old to learn to surf. But when I said ten years from now, what will I regret if I don't learn it or do it now? And I said, well, ten years from now, I might still be living in Baja... And so I did."
-
-## The Midlife Chrysalis
-
-Instead of "midlife crisis," Chip promotes "midlife chrysalis":
-
-> "If you think about the caterpillar to butterfly journey, midlife is the chrysalis... At the time, you know, when you're going through it, it's like, oh, shit. My life my life is liquefying in front of myself. But, you know, on the other side of it, there's a metamorphosis that happens."
-
-The core message is that **aging and living are the same thing** - and there are genuine, research-backed reasons to look forward to getting older rather than just dreading it.
+This approach transforms the conversation from "Are you too old?" to "Can you solve problems like this for us?"
