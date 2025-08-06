@@ -1,4 +1,4 @@
-# Your painful life lessons are the raw material for your future wisdom. 
+# Your painful life lessons are the raw material for your future wisdom.
 > https://www.lennysnewsletter.com/p/chip-conley
 
 This was Chip's favorite life motto, and it encapsulates a core philosophy about how we develop wisdom through adversity. Here's the deeper context:
@@ -30,7 +30,7 @@ Breaking this down:
 
 This philosophy is central to the Modern Elder Academy's mission. Chip noted that people typically come to MEA during transitions and challenging times:
 - Selling companies
-- Getting divorced  
+- Getting divorced
 - Becoming empty nesters
 - Dealing with health diagnoses
 - Career changes
