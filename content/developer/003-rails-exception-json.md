@@ -16,25 +16,45 @@ To improve this, you can modify the Rails server to send the error trace directl
 When our UI receives an error response, we can enhance the user experience by displaying more detailed information about the failure.
 
 ```ruby
-# app/lib/custom_exception_wrapper.rb
-class CustomExceptionWrapper < ActionDispatch::ExceptionWrapper
-  def render_exception
-    if @request.format.json?
-      {
+# app/lib/custom_exception.rb
+class CustomException
+  def call(env)
+    exception = env['action_dispatch.exception']
+
+    request = ActionDispatch::Request.new(env)
+    status = request.path_info[1..-1].to_i
+    begin
+      content_type = request.formats.first
+    rescue ActionDispatch::Http::MimeNegotiation::InvalidType
+      content_type = Mime[:text]
+    end
+
+    if request.format.json?
+      body = {
         status: :internal_server_error,
-        message: @exception.message,
-        trace: Rails.env.development? ? @exception.backtrace : [] # Include backtrace in development
+        message: exception.message,
+        trace: exception.backtrace
       }.to_json
     else
-      super # Fallback to default HTML rendering for other formats
+      body = "<html><pre><code>#{exception.message}\n\n#{exception.backtrace.join("\n")}</code></pre><html>"
     end
+
+    [
+      status,
+      {
+        Rack::CONTENT_TYPE => "#{content_type}; charset=#{ActionDispatch::Response.default_charset}",
+        Rack::CONTENT_LENGTH => body.bytesize.to_s
+      },
+      [body]
+    ]
   end
 end
 ```
 
 ```ruby
-# config/application.rb or config/environments/development.rb
+# config/application.rb
+config.consider_all_requests_local = false
 config.exceptions_app = ->(env) {
-  CustomExceptionWrapper.new(env, env['action_dispatch.exception']).render
+  CustomException.new().call(env)
 }
 ```
