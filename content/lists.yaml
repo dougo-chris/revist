@@ -21,3 +21,7 @@
 - title: "Infrastructure"
   description: "Here's what I use in hosting FolioReady."
   tag: "infrastructure"
+
+- title: "Developer"
+  description: "My Development setup and tools I use to build FolioReady."
+  tag: "developer"
